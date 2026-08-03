@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Life is not defined by its summits. Essays on reinvention, work, money, motherhood and mountains.",
+          "Life is not defined by its summits. A quiet publication of essays on reinvention, work, money, motherhood and mountains.",
       },
       { property: "og:url", content: "/" },
     ],

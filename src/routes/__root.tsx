@@ -80,16 +80,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Between the Climbs — A publication by Joy D'Souza" },
+      { title: "Between the Climbs — Essays by Joy D'Souza" },
       {
         name: "description",
         content:
-          "Essays on reinvention, work, money, motherhood and mountains — a quiet publication by Joy D'Souza.",
+          "Life is not defined by its summits. A quiet publication of essays on reinvention, work, money, motherhood and mountains.",
       },
       { name: "author", content: "Joy D'Souza" },
       { property: "og:site_name", content: "Between the Climbs" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Between the Climbs — Essays by Joy D'Souza" },
+      { name: "twitter:title", content: "Between the Climbs — Essays by Joy D'Souza" },
+      { property: "og:description", content: "Life is not defined by its summits. A quiet publication of essays on reinvention, work, money, motherhood and mountains." },
+      { name: "twitter:description", content: "Life is not defined by its summits. A quiet publication of essays on reinvention, work, money, motherhood and mountains." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/01aa999e-52f5-4080-a551-22161502460c/id-preview-8b29bae7--ad0f35b4-e3ba-409c-869b-68e94fa5694f.lovable.app-1785795304480.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/01aa999e-52f5-4080-a551-22161502460c/id-preview-8b29bae7--ad0f35b4-e3ba-409c-869b-68e94fa5694f.lovable.app-1785795304480.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
