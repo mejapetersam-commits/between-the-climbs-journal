@@ -75,7 +75,7 @@ export const stories: Story[] = [
     readingTime: "8 min read",
     date: "January 2026",
     image: joyPortrait,
-    imageAlt: "A woman sitting by a window in a wooden room, resting her chin on her hand",
+    imageAlt: "A hiker pausing on a mountain trail, ridge and alpine plants behind her",
     body: [
       "On a long walk, the group moves at the speed of whoever is struggling. There is no negotiating with this. You can resent it for an hour or you can accept it and start noticing things.",
       "Motherhood arrived with the same arithmetic and considerably less warning.",

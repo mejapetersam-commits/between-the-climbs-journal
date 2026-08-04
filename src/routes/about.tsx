@@ -30,8 +30,8 @@ function About() {
     <>
       <PageHeader
         eyebrow="The Editor"
-        title="Joy D'Souza"
-        intro="Writer, entrepreneur, investment professional, and recovering perfectionist."
+        title="Welcome to Between the Climbs"
+        intro="Most stories celebrate the summit. I'm more interested in everything that happens in between."
       />
 
       <section className="mx-auto max-w-[84rem] px-6 pb-24 md:px-10 md:pb-32">
@@ -40,10 +40,10 @@ function About() {
             <div className="image-reveal md:sticky md:top-32">
               <img
                 src={joyPortrait}
-                alt="Portrait of Joy D'Souza by a window"
+                alt="Joy D'Souza smiling on a mountain trail, hiking pole in hand, with a ridge rising behind her"
                 loading="lazy"
-                width={1200}
-                height={1504}
+                width={712}
+                height={890}
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
@@ -51,25 +51,35 @@ function About() {
           <Reveal delay={100}>
             <div className="prose-editorial max-w-xl">
               <p>
-                I have spent my working life in two rooms that rarely speak to each other: the one
-                where capital is allocated, and the one where stories are told. It took me
-                embarrassingly long to notice they are the same room. Both are about what people
-                believe, and what they are willing to risk on it.
+                Most stories celebrate the summit. The promotion. The successful business. The
+                finish line. The mountain peak.
               </p>
               <p>
-                I have worked in investment, built companies, and been the person in the corner of
-                the conference writing down what everyone actually meant. Somewhere in the middle of
-                that I became a mother, moved my life more than once, and discovered mountains &mdash;
-                which have since become the most reliable teacher I have.
+                But I&rsquo;ve become increasingly interested in everything that happens between
+                those moments. The uncertainty. The reinvention. The false starts. The lessons
+                learned while building, climbing, failing, beginning again, and figuring things out
+                as we go.
               </p>
               <p>
-                The perfectionism is a longer story. It made me good at my job and slow at my life.
-                I am recovering, which is to say I now publish essays I would still like to edit.
+                I write as someone who has built businesses, spent years in investment before
+                leaving it, become a mother, and slowly made peace with being a recovering
+                perfectionist &mdash; which is to say I now publish essays I would still like to
+                edit.
               </p>
               <p>
-                Between the Climbs is the publication I wanted to read when I was thirty-two,
-                competent, exhausted, and quietly unsure whether the thing I was climbing was mine.
+                Between the Climbs is a space for reflections on work, money, entrepreneurship,
+                motherhood, mountains, and the stories we tell ourselves while navigating life.
               </p>
+              <p>
+                Some posts will be personal. Some practical. Some may begin on a mountain trail and
+                end somewhere entirely unexpected.
+              </p>
+              <p>
+                If you&rsquo;ve ever found yourself between where you&rsquo;ve been and where
+                you&rsquo;re going, I hope you&rsquo;ll feel at home here.
+              </p>
+              <p>Thank you for being here.</p>
+              <p className="font-serif text-2xl italic">&mdash; Joy</p>
             </div>
 
             <div className="mt-14 grid gap-10 sm:grid-cols-2">
