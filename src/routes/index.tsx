@@ -81,10 +81,10 @@ function Home() {
             <div className="image-reveal">
               <img
                 src={joyPortrait}
-                alt="Joy D'Souza sitting by a window in a wooden room"
+                alt="Joy D'Souza on a mountain trail at altitude, smiling with a hiking pole in hand"
                 loading="lazy"
-                width={1200}
-                height={1504}
+                width={712}
+                height={890}
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
