@@ -11,7 +11,19 @@ export function SiteFooter() {
               A quiet publication about reinvention, work, money, motherhood, mountains, and the
               stories we tell ourselves while figuring life out.
             </p>
+            <p className="mt-6 text-xs text-muted-foreground">
+              Read by quiet, ambitious people in 28 countries.
+            </p>
+            <a
+              href={SUBSTACK_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-4 inline-flex min-h-11 items-center justify-center bg-primary px-7 text-[0.72rem] tracking-[0.18em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+            >
+              Subscribe on Substack
+            </a>
           </div>
+
 
           <nav aria-label="Footer">
             <p className="eyebrow">Read</p>
