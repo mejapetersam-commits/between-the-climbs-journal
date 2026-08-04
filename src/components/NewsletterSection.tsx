@@ -1,22 +1,10 @@
-import { useState, type FormEvent } from "react";
-import { toast } from "sonner";
+export const SUBSTACK_URL = "https://betweentheclimbs.substack.com";
 
 export function NewsletterSection({
   variant = "section",
 }: {
   variant?: "section" | "compact";
 }) {
-  const [email, setEmail] = useState("");
-
-  const onSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-    setEmail("");
-    toast("Welcome to the walk.", {
-      description: "Look out for a note from Joy in your inbox on Sunday morning.",
-    });
-  };
-
   return (
     <section
       aria-labelledby="newsletter-heading"
