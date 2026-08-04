@@ -84,9 +84,9 @@
 
   --gradient-dawn: linear-gradient(
     180deg,
-    color-mix(in oklab, var(--slate-ink) 72%, transparent) 0%,
-    color-mix(in oklab, var(--slate-ink) 30%, transparent) 45%,
-    color-mix(in oklab, var(--slate-ink) 68%, transparent) 100%
+    color-mix(in oklab, var(--slate-ink) 38%, transparent) 0%,
+    color-mix(in oklab, var(--terracotta) 12%, transparent) 42%,
+    color-mix(in oklab, var(--slate-ink) 52%, transparent) 100%
   );
   --gradient-mist: linear-gradient(
     180deg,

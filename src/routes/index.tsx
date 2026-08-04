@@ -40,6 +40,7 @@ function Home() {
           width={1920}
           height={1280}
           className="absolute inset-0 size-full object-cover"
+          style={{ filter: "brightness(1.16) contrast(1.04) saturate(1.08)" }}
         />
         <div
           className="absolute inset-0"
