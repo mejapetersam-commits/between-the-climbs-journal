@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { SUBSTACK_URL } from "@/components/NewsletterSection";
 
 export function SiteFooter() {
   return (
