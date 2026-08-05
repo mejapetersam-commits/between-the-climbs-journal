@@ -37,6 +37,7 @@
   --color-slate-ink: var(--slate-ink);
   --color-dawn: var(--dawn);
   --color-terracotta: var(--terracotta);
+  --color-pine: var(--pine);
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Karla", system-ui, sans-serif;
 }
@@ -44,43 +45,49 @@
 :root {
   --radius: 0.25rem;
 
-  /* Alpine White */
-  --background: oklch(0.977 0.008 85);
-  /* Mountain Slate ink */
-  --foreground: oklch(0.35 0.022 249);
+  /* Ivory */
+  --background: #F7F4EF;
+  /* Forest Green ink (darkened for text contrast) */
+  --foreground: #1F3830;
 
-  --card: oklch(0.99 0.005 85);
-  --card-foreground: oklch(0.35 0.022 249);
-  --popover: oklch(0.99 0.005 85);
-  --popover-foreground: oklch(0.35 0.022 249);
+  --card: #FBF9F5;
+  --card-foreground: #1F3830;
+  --popover: #FBF9F5;
+  --popover-foreground: #1F3830;
 
   /* Forest Green */
-  --primary: oklch(0.428 0.055 168);
-  --primary-foreground: oklch(0.977 0.008 85);
+  --primary: #284B3F;
+  --primary-foreground: #F7F4EF;
 
-  /* Sandstone */
-  --secondary: oklch(0.83 0.045 82);
-  --secondary-foreground: oklch(0.35 0.022 249);
+  /* Warm Sand */
+  --secondary: #D8C8AF;
+  --secondary-foreground: #1F3830;
 
-  --muted: oklch(0.945 0.011 85);
-  --muted-foreground: oklch(0.52 0.02 249);
+  --muted: #EFEAE0;
+  /* Stone Grey */
+  --muted-foreground: #6D7075;
 
-  /* Terracotta */
-  --accent: oklch(0.63 0.098 35);
-  --accent-foreground: oklch(0.977 0.008 85);
+  /* Sunrise Gold — used sparingly: subscribe button, links, hover states, featured labels, reading progress */
+  --accent: #D9A441;
+  --accent-foreground: #3D2A08;
 
   --destructive: oklch(0.55 0.19 27);
   --destructive-foreground: oklch(0.977 0.008 85);
 
-  --border: oklch(0.885 0.014 85);
-  --input: oklch(0.885 0.014 85);
-  --ring: oklch(0.428 0.055 168);
+  --border: #E4DFD5;
+  --input: #E4DFD5;
+  --ring: #284B3F;
 
-  --sand: oklch(0.83 0.045 82);
-  --slate-ink: oklch(0.35 0.022 249);
-  /* Dawn Blue */
-  --dawn: oklch(0.73 0.055 235);
-  --terracotta: oklch(0.63 0.098 35);
+  /* Warm Sand */
+  --sand: #D8C8AF;
+  /* Forest Green, doubling as the dark ink tone for overlays */
+  --slate-ink: #284B3F;
+  /* Mist Blue */
+  --dawn: #A7BBC7;
+  /* Sunrise Gold */
+  --terracotta: #D9A441;
+  /* Pine Green — secondary accent for hover states / links */
+  --pine: #4F6F52;
 
   --gradient-dawn: linear-gradient(
     180deg,
