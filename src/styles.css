@@ -158,7 +158,8 @@
   font-size: 0.6875rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted-foreground);
+  color: color-mix(in oklab, var(--foreground) 78%, transparent);
+  font-weight: 600;
 }
 
 @utility rule-line {
@@ -217,5 +218,107 @@
     line-height: 1.85;
     margin-bottom: 1.5rem;
     color: color-mix(in oklab, var(--foreground) 92%, transparent);
+  }
+}
+
+/* Section background rhythm */
+@utility section-warm {
+  background-color: color-mix(in oklab, var(--sand) 40%, var(--background));
+}
+
+@utility section-tint {
+  background-color: color-mix(in oklab, var(--dawn) 18%, var(--background));
+}
+
+@utility section-bold {
+  background-color: var(--alpine);
+  color: #FFF8F0;
+
+  & .eyebrow {
+    color: color-mix(in oklab, #FFF8F0 82%, transparent);
+  }
+
+  & .text-muted-foreground {
+    color: color-mix(in oklab, #FFF8F0 88%, transparent);
+  }
+}
+
+/* Category tags */
+@utility cat-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  color: #FFF8F0;
+  background: var(--accent);
+}
+
+/* Buttons */
+@utility btn-solid {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    background: var(--terracotta);
+    transform: translateY(-2px);
+  }
+}
+
+@utility btn-alpine {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--alpine);
+  color: #FFF8F0;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    background: var(--dawn);
+    transform: translateY(-2px);
+  }
+}
+
+@utility btn-outline-warm {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 2px solid var(--alpine);
+  color: var(--alpine);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    background: var(--alpine);
+    color: #FFF8F0;
   }
 }
