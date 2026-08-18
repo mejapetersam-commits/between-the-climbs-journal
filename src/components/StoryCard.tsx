@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import type { Story } from "@/lib/stories";
+import { CategoryTag } from "@/components/CategoryTag";
 
 export function StoryCard({ story, large = false }: { story: Story; large?: boolean }) {
   return (
@@ -20,17 +21,24 @@ export function StoryCard({ story, large = false }: { story: Story; large?: bool
           />
         </div>
         <div className="mt-6">
-          <p className="eyebrow">
-            {story.category} &middot; {story.readingTime}
-          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <CategoryTag category={story.category} />
+            <span className="eyebrow">{story.readingTime}</span>
+          </div>
           <h3
             className={`mt-3 font-serif leading-[1.15] ${large ? "text-3xl md:text-4xl" : "text-2xl md:text-[1.75rem]"}`}
           >
             <span className="link-underline">{story.title}</span>
           </h3>
-          <p className="mt-4 max-w-prose text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-prose text-sm leading-relaxed text-foreground/85">
             {story.dek}
           </p>
+        </div>
+      </Link>
+    </article>
+  );
+}
+
         </div>
       </Link>
     </article>
