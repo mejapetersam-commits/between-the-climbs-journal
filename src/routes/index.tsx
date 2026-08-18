@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroDawn from "@/assets/hero-dawn.jpg";
 import joyPortrait from "@/assets/joy-portrait.jpg";
 import { featuredStory, latestStories } from "@/lib/stories";
+import { CategoryTag } from "@/components/CategoryTag";
 import { StoryCard } from "@/components/StoryCard";
 import { Reveal } from "@/components/Reveal";
 import { NewsletterSection } from "@/components/NewsletterSection";
@@ -60,13 +61,13 @@ function Home() {
             <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
               <Link
                 to="/stories"
-                className="inline-flex min-h-12 items-center justify-center bg-secondary px-8 text-[0.72rem] tracking-[0.2em] text-secondary-foreground uppercase transition-opacity hover:opacity-90"
+                className="btn-solid"
               >
                 Read the Stories
               </Link>
               <Link
                 to="/newsletter"
-                className="inline-flex min-h-12 items-center justify-center border border-secondary/60 px-8 text-[0.72rem] tracking-[0.2em] text-secondary uppercase transition-colors hover:bg-secondary/10"
+                className="inline-flex min-h-12 items-center justify-center border-2 border-secondary px-8 text-[0.72rem] font-bold tracking-[0.18em] text-secondary uppercase transition-colors hover:bg-secondary hover:text-secondary-foreground"
               >
                 Join the Journey
               </Link>
@@ -118,7 +119,7 @@ function Home() {
       </section>
 
       {/* 3. Featured Story */}
-      <section aria-labelledby="featured-heading" className="border-y border-border bg-muted/40">
+      <section aria-labelledby="featured-heading" className="section-warm border-y border-border">
         <div className="mx-auto max-w-[84rem] px-6 py-20 md:px-10 md:py-28">
           <Reveal>
             <p className="eyebrow">The Feature</p>
@@ -140,16 +141,18 @@ function Home() {
                 />
               </Link>
               <div>
-                <p className="eyebrow">
-                  {featuredStory.category} &middot; {featuredStory.readingTime} &middot;{" "}
-                  {featuredStory.date}
-                </p>
+                <div className="flex flex-wrap items-center gap-3">
+                  <CategoryTag category={featuredStory.category} />
+                  <span className="eyebrow">
+                    {featuredStory.readingTime} &middot; {featuredStory.date}
+                  </span>
+                </div>
                 <h2 id="featured-heading" className="mt-5 font-serif text-4xl leading-[1.1] md:text-5xl">
                   <Link to="/stories/$slug" params={{ slug: featuredStory.slug }} className="link-underline">
                     {featuredStory.title}
                   </Link>
                 </h2>
-                <p className="mt-7 max-w-prose text-base leading-relaxed text-muted-foreground">
+                <p className="mt-7 max-w-prose text-base leading-relaxed text-foreground/85">
                   {featuredStory.dek}
                 </p>
                 <Link
@@ -185,7 +188,7 @@ function Home() {
       </section>
 
       {/* 5. Reflection quote */}
-      <section className="border-y border-border bg-[image:var(--gradient-mist)]">
+      <section className="section-bold border-y border-border">
         <div className="mx-auto max-w-4xl px-6 py-28 text-center md:py-44">
           <Reveal>
             <blockquote className="font-serif text-3xl leading-[1.3] italic md:text-5xl md:leading-[1.25]">
@@ -222,7 +225,7 @@ function Home() {
               </div>
               <Link
                 to="/speaking"
-                className="mt-8 inline-flex min-h-12 items-center justify-center bg-primary px-8 text-[0.72rem] tracking-[0.2em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+                className="btn-alpine mt-8"
               >
                 Book Joy to Speak
               </Link>
@@ -232,7 +235,7 @@ function Home() {
       </section>
 
       {/* 7. Projects */}
-      <section aria-labelledby="projects-heading" className="border-t border-border bg-muted/40">
+      <section aria-labelledby="projects-heading" className="section-tint border-t border-border">
         <div className="mx-auto max-w-[84rem] px-6 py-24 md:px-10 md:py-32">
           <div className="flex flex-wrap items-baseline justify-between gap-4">
             <h2 id="projects-heading" className="font-serif text-3xl md:text-4xl">
@@ -242,7 +245,7 @@ function Home() {
               All projects
             </Link>
           </div>
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-foreground/85">
             Notes from the editor&rsquo;s desk on what is in progress, and why each one matters
             enough to make.
           </p>
@@ -252,7 +255,7 @@ function Home() {
                 <article className="flex h-full flex-col bg-background p-8 md:p-10">
                   <p className="eyebrow">{p.status}</p>
                   <h3 className="mt-5 font-serif text-2xl leading-tight">{p.title}</h3>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.note}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-foreground/85">{p.note}</p>
                 </article>
               </Reveal>
             ))}
@@ -289,7 +292,7 @@ function Home() {
                 href="https://lilmissbelle.wordpress.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="mt-8 inline-flex min-h-12 items-center justify-center border border-input px-8 text-[0.72rem] tracking-[0.2em] uppercase transition-colors hover:bg-muted"
+                className="btn-outline-warm mt-8"
               >
                 Visit the Archive
               </a>
