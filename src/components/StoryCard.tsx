@@ -38,9 +38,3 @@ export function StoryCard({ story, large = false }: { story: Story; large?: bool
     </article>
   );
 }
-
-        </div>
-      </Link>
-    </article>
-  );
-}
